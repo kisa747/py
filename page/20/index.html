@@ -215,9 +215,14 @@
 <p>2，安装字典</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo aptitude install stardict-cdict-gb</span><br></pre></td></tr></table></figure>
 <p>cdict-gb dictionary(en - zh_CN)  4.5M      57510 words</p>
-<p>3,一个命令就是     sudo aptitude install stardict-cdict-gb stardict</p>
-<p>可以到下面网站查找相应辞典<br><a target="_blank" rel="noopener" href="http://stardict.sourceforge.net/Dictionaries_zh_CN.php">http://stardict.sourceforge.net/Dictionaries_zh_CN.php</a></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2007/06/ubuntu-stardict-install.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -288,6 +293,11 @@ yum install mplayer mplayer-gui
 
 <p>另一个我用的一个前端smplayer，现在我一直在用它，不过是基于qt的。</p>
           <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2007/06/fedora-7-media-config.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
           <!--/noindex-->
         
       
@@ -366,12 +376,14 @@ yum install mplayer mplayer-gui
 <p>当那个object-x里面的object _type值为menu-object，修改里面的 custom_icon就是开始菜单的图标，改为自定义的路径。</p>
 <p>且保证use_custom_icon为 true，则定制图标设置就被用作按钮的定制图标。如果为 false，则忽略定制图标设置。该设置只在对象类型为”菜单对象”或”抽屉对象”时才有效。附上几个好看的图标，是我在gnomelook.org上下的，<a target="_blank" rel="noopener" href="http://cid-6abece639ad907b9.skydrive.live.com/self.aspx/public/Vista-Panel.zip"><strong>Vista-Panel.zip</strong>
 </a></p>
-<blockquote>
-<p>/apps/metacity/global_keybindings</p>
-<p>/apps/metacity/keybinding_commands</p>
-</blockquote>
-<p>这两个设置快捷键和快捷键对应的命令。</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2007/06/gconf-editor-config.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -442,8 +454,14 @@ yum install mplayer mplayer-gui
 <p>export GTK_IM_MODULE=xim</p>
 <p>2，修改后可能画面很卡，是因为声音输出的冲突，修改~/.realplayerrc文件的配置，<br>在[Helix]下面添加一段</p>
 <p>SoundDriver=1</p>
-<p>就OK了，不行的话，把1改为2</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2007/06/ubuntu-realplayer.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -514,14 +532,14 @@ yum install mplayer mplayer-gui
 <p>加#的是注释<br>经验介绍：<br>1，首先sudo apt-get install vsftpd来安装</p>
 <p>安装好vsftpd后，就配置/etc/vsftpd.conf</p>
 <p>2,注意到了</p>
-<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#接受本地用户</span></span><br><span class="line"><span class="attr">local_enable</span>=<span class="literal">YES</span></span><br></pre></td></tr></table></figure>
-<p>这一句，就是表示允许本地用户登录，因此要配置本地登录<br>执行命令： <code>sudo nano /etc/vsftp.user_list</code><br>输入：</p>
-<blockquote>
-<p>ftpuser<br>anonymous<br>保存后退出<br>3，执行命令sudo /etc/init.d/vsftpd start<br>重启vsftpd服务</p>
-</blockquote>
-<p>顺便介绍一下vsftpd命令</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 分别是         重启｜停止｜启动          vsftpd服务</span></span><br><span class="line">sudo /etc/init.d/vsftpd restart stop start</span><br></pre></td></tr></table></figure>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2007/06/vsftp-config.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -589,6 +607,11 @@ yum install mplayer mplayer-gui
       
           <p>以前用windows给别人局域网共享，捣鼓了好久怎么都搞不定，如今用linux共享，简直太easy了，配置一下samba.conf就ok了。<br>贴上咱的samba.conf</p>
           <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2007/05/samba-study.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
           <!--/noindex-->
         
       
@@ -727,12 +750,14 @@ yum install mplayer mplayer-gui
 <p>3.改网络访问模式<br>打开组策略编辑器，依次选择”<span style="color: #0000ff;">计算机配置→Windows设置→安全设置→本地策略→安全选项</span>“，双击”<span style="color: #0000ff;">网络访问：本地账号的共享和安全模式</span>“策略，将默认设置”<span style="color: #993366;">仅来宾-本地用户以来宾身份验证</span>“，更改为”<span style="color: #0000ff;">经典：本地用户以自己的身份验证</span>“。</p>
 <p>我们可能还会遇到另外一个问题，即当用户的口令为空时，即使你做了上述的所有的更改还是不能进行登录，访问还是会被拒绝。这是因为，在系统”<span style="color: #0000ff;">安全选项</span>“中有”<span style="color: #0000ff;">账户：使用空白密码的本地账户只允许进行控制台登录</span>“策略默认是启用的，根据Windows XP安全策略中拒绝优先的原则，密码为空的用户通过网络访问使用Windows XP的计算机时便会被禁止。我们只要将这个策略停用即可解决问题。在安全选项中，找到”<span style="color: #0000ff;">使用空白密码的本地账户只允许进行控制台登录</span>“项，停用就可以，否 则即使开了guest并改成经典模式还是不能登录。经过以上的更改基本就可以访问了，你可以尝试选择一种适合你的方法。下面在再补充点其它可能会遇到的问 题。</p>
 <p>5.关于用网络邻居访问不响应或者反应慢的问题<br>在WinXP和Win2000中浏览网上邻居时系统默认会延迟30秒，Windows将使用这段时间去搜寻远程计算机是否有指定的计划任务（甚至有可 能到Internet中搜寻）。如果搜寻时网络时没有反应便会陷入无限制的等待，那么10多分钟的延迟甚至报错就不足为奇了。下面是具体的解决方法。</p>
-<p>A.关掉WinXP的计划任务服务（Task Scheduler）<br>可以到”控制面板/管理工具/服务”中打开”Task Scheduler”的属性对话框，单击”停止”按钮停止该项服务，再将启动类型设为”手动”，这样下次启动时便不会自动启动该项服务了。</p>
-<p>B.删除注册表中的两个子键<br>到注册表中找到主键”<span style="color: #0000ff;">HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RemoteComputer\NameSpace</span>“<br>删除下面的两个子健：<span style="color: #0000ff;">{2227A280-3AEA-1069-A2DE-08002B30309D}和{D6277990-4C6A-11CF-87- 00AA0060F5BF}</span>。</p>
-<p>其中，第一个子健决定网上邻居是否要搜索网上的打印机（甚至要到Internet中去搜寻），如果网络中没有共享的打印机便可删除此键。第二个子健则决定是否需要查找指定的计划任务，这是网上邻居很慢的罪魁祸首，必须将此子健删除。</p>
-<p>附上一个可以快速进行局域网设置的小软件： <a target="_blank" rel="noopener" href="http://cid-6abece639ad907b9.skydrive.live.com/self.aspx/public/%e5%b1%80%e5%9f%9f%e7%bd%91%e5%85%b1%e4%ba%ab%e8%ae%be%e7%bd%ae%e5%b7%a5%e5%85%b7.rar"><strong>局域网共享设置工具</strong>
-</a></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2007/04/xp-lan-config.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
