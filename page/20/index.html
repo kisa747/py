@@ -318,6 +318,84 @@ yum install mplayer mplayer-gui
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://kisa747.com/2007/06/ubuntu-realplayer.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="kisa747">
+      <meta itemprop="description" content="人生苦短，我用 Python！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="智行天下">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2007/06/ubuntu-realplayer.html" class="post-title-link" itemprop="url">Ubuntu下Realplayer的问题</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2007-06-23 00:00:00" itemprop="dateCreated datePublished" datetime="2007-06-23T00:00:00+08:00">2007-06-23</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>1，Realplayer没有声音，这是因为Realplayer与scim冲突，修改/usr/lib/realplay-10.0.8/realplay</p>
+<p>在第二行添加</p>
+<p>export GTK_IM_MODULE=xim</p>
+<p>2，修改后可能画面很卡，是因为声音输出的冲突，修改~/.realplayerrc文件的配置，<br>在[Helix]下面添加一段</p>
+<p>SoundDriver=1</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2007/06/ubuntu-realplayer.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://kisa747.com/2007/06/gconf-editor-config.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -379,84 +457,6 @@ yum install mplayer mplayer-gui
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2007/06/gconf-editor-config.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://kisa747.com/2007/06/ubuntu-realplayer.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="kisa747">
-      <meta itemprop="description" content="人生苦短，我用 Python！">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="智行天下">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2007/06/ubuntu-realplayer.html" class="post-title-link" itemprop="url">Ubuntu下Realplayer的问题</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2007-06-23 00:00:00" itemprop="dateCreated datePublished" datetime="2007-06-23T00:00:00+08:00">2007-06-23</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>1，Realplayer没有声音，这是因为Realplayer与scim冲突，修改/usr/lib/realplay-10.0.8/realplay</p>
-<p>在第二行添加</p>
-<p>export GTK_IM_MODULE=xim</p>
-<p>2，修改后可能画面很卡，是因为声音输出的冲突，修改~/.realplayerrc文件的配置，<br>在[Helix]下面添加一段</p>
-<p>SoundDriver=1</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2007/06/ubuntu-realplayer.html#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
